@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+#enterNumber {
+    margin: 200px auto;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    text-align: center;
+}
+
+#numberOfBoxes {
+    width: 150px;
+    height: 50px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+#submitButton {
+    width: 100px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    width: 25%;
+    height: 50px;
+    background-color: rgb(220, 220, 220);
+    padding: 15px;
+    justify-content: space-between;
+    margin: 0 auto;
+    min-width: 320px;
+}
+
+nav div {
+    display: flex;
+}
+
+#totalCount, #totalItems {
+    margin-left: 10px;
+    color: white;
+    padding: 0px 5px;
+    background-color: rgb(60, 59, 59);
+    border-radius: 5px;
+}
+
+#resetButton {
+    display: flex;
+    justify-content: center;
+}
+
+#reset {
+    width: 70px;
+    background-color: lightblue;
+    margin-top: 20px;
+}
+
+.buttons {
+    width: 210px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+
+button {
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.count {
+    background-color: rgb(233, 156, 14);
+    width: 50px;
+    text-align: center;
+    border-radius: 3px;
+    border: 2px solid black;
+}
+
+.plus {
+    background-color: rgb(17, 156, 17);
+    width: 30px;
+}
+
+.minus {
+    background-color: rgb(250, 29, 29);
+    width: 30px;
+}
+
+.delete {
+    background-color: #C71818;
+    font-weight: 600;
+    width: 70px;
+}
