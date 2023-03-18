@@ -33,7 +33,9 @@ function initialize () {
 function start () {
     let x = document.getElementById("numberOfBoxes").value;
     if (x == '') {
-        x = 0;
+        document.getElementById("numberOfBoxes").style.border = "2px solid red";
+        document.getElementById("requiredMessege").innerHTML = "*it's required";
+        return;
     }
     x = Math.min(x, 100);
     values = [];
