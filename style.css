@@ -16,13 +16,18 @@
 #numberOfBoxes {
     width: 150px;
     height: 50px;
-    margin: 10px auto;
+    margin: 10px auto 0 auto;
     text-align: center;
+}
+
+#requiredMessege {
+    color: red;
+    font-size: .7rem;
 }
 
 #submitButton {
     width: 100px;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 
 nav {
