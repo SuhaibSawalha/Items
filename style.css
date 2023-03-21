@@ -20,6 +20,12 @@
     text-align: center;
 }
 
+#numberOfBoxes::placeholder {
+    font-size: 0.8rem;
+    text-align: center;
+    color: #c8c6c6;
+}
+
 #requiredMessege {
     color: red;
     font-size: .7rem;
@@ -64,16 +70,50 @@ nav div {
     margin-top: 20px;
 }
 
-.buttons {
+.buttons, .buttons0 {
     width: 210px;
     display: flex;
     justify-content: space-between;
     margin: 20px auto;
 }
 
+.buttons0 {
+    animation-name: buttonsMove;
+    animation-duration: 2s;
+}
+
+@keyframes buttonsMove {
+    from {
+        padding-top: 200px;
+    }
+    to {
+        padding-top: 0;
+    }
+}
+
 button {
     cursor: pointer;
     border-radius: 3px;
+}
+
+button:enabled {
+    pointer-events: all;
+}
+
+button:hover {
+    opacity: .7;
+    transform: scale(1.05);
+}
+
+button:active {
+    opacity: .9;
+    transform: scale(1.15);
+}
+
+button:disabled {
+    background-color: white;
+    pointer-events: none;
+    background-color: rgb(159, 32, 32);
 }
 
 .count {
