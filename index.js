@@ -21,7 +21,6 @@ function initialize () {
     `
     document.getElementById("totalCount").innerHTML = values.reduce((x, y) => x + y, 0);
     document.getElementById("totalItems").innerHTML = values.length;
-    console.log(disablity);
     document.getElementById("buttonsContainer").innerHTML = values.map( (x, y) => 
         `
         <div class="buttons${initializeCalls == 0 ? 0 : ''}">
